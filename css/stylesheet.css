@@ -1,0 +1,65 @@
+body {
+    background-color: white;
+}
+
+#heading, #info, #vehicles {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#heading {
+    text-align: center;
+}
+
+#headingText {
+    font-style: italic;
+    line-height: 8px;
+    font-size: 15px;
+}
+
+#info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: rgba(78, 78, 78, 0.54);
+    color: white;
+    overflow-wrap: break-word;
+    text-shadow: 1px 1px 1px black;;
+}
+
+#info > * {
+    width: 33.33%;
+}
+
+#address, #hours, #contact {
+    padding: 5px;
+}
+
+#address {
+    text-align: left;
+}
+#hours {
+    text-align: center
+}
+#contact {
+    text-align: right;
+}
+
+.jumbotron {
+    background-image: url(../images/frontTINY.png);
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+
+@media only screen and (max-width: 650px) {
+    #info {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    #info > * {
+        width: 100%
+    }
+    #address, #hours, #contact {
+        text-align: center;
+    }
+}
